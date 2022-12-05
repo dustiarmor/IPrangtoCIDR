@@ -1,5 +1,15 @@
 # IPrangtoCIDR 
 Thank to https://blog.ip2location.com/knowledge-base/how-to-convert-ip-address-range-into-cidr/
+
+1. vs studio F5 run test
+2. input ip rang to left richtextBox, such like :
+
+   `1.1.1.1,2.2.2.2`
+   
+    `1.2.1.1,1.2.1.8`
+    
+    `...`
+3. press Button
 #
 
 ```
