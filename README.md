@@ -1,6 +1,8 @@
 # IPrangtoCIDR 
-# Thanks to https://blog.ip2location.com/knowledge-base/how-to-convert-ip-address-range-into-cidr/
-###################CORE API#######################
+Thank to https://blog.ip2location.com/knowledge-base/how-to-convert-ip-address-range-into-cidr/
+#
+
+```
 public static List<string> iprange2cidr(string ipStart, string ipEnd)
 {
     long start = ip2long(ipStart);
@@ -34,7 +36,8 @@ public static List<string> iprange2cidr(string ipStart, string ipEnd)
     }
     return result;
 }
- 
+```
+``` 
 public static List<string> iprange2cidr(int ipStart, int ipEnd)
 {
     long start = ipStart;
@@ -68,12 +71,15 @@ public static List<string> iprange2cidr(int ipStart, int ipEnd)
     }
     return result;
 }
- 
+
+```
+```
 private static long iMask(int s)
 {
     return (long)(Math.Pow(2, 32) - Math.Pow(2, (32 - s)));
 }
- 
+ ```
+ ```
 private static string long2ip(long ipAddress)
 {
     System.Net.IPAddress ip;
@@ -83,7 +89,8 @@ private static string long2ip(long ipAddress)
     }
     return "";
 }
- 
+ ```
+ ```
 private static long ip2long(string ipAddress)
 {
     System.Net.IPAddress ip;
@@ -93,5 +100,4 @@ private static long ip2long(string ipAddress)
     }
     return -1;
 }
-
-========================================================
+```
